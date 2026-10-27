@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7faf7">
+<meta name="description" content="Personal website Fera — lulusan BINUS University.">
+<title>Fera — Personal Website</title>
+<style>
+:root{--green:#176b4d;--green2:#dcefe4;--ink:#18251f;--muted:#637168;--paper:#f7faf7;--white:#fff;--line:#e2eae4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1080px,calc(100% - 40px));margin:auto}
+header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-size:1.2rem;font-weight:800;letter-spacing:-.05em}.brand span{color:var(--green)}nav{display:flex;gap:28px;font-size:.92rem;color:var(--muted)}nav a:hover{color:var(--green)}
+.hero{padding:100px 0 92px;display:grid;grid-template-columns:1.4fr .6fr;align-items:center;gap:64px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green);font-size:.82rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.dot{width:8px;height:8px;background:#52a878;border-radius:50%}h1{font-size:clamp(3.5rem,8vw,6.5rem);line-height:.98;letter-spacing:-.075em;margin:22px 0 24px;font-weight:800}h1 em{font-style:normal;color:var(--green)}.intro{font-size:1.13rem;color:var(--muted);max-width:590px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 19px;border-radius:8px;font-weight:650;font-size:.94rem;border:1px solid var(--green)}.btn.primary{background:var(--green);color:white}.btn.secondary{color:var(--green);background:transparent}.btn:hover{transform:translateY(-2px);transition:.2s}.monogram{aspect-ratio:1;border-radius:28px;background:var(--green2);display:grid;place-items:center;position:relative;overflow:hidden}.monogram:before,.monogram:after{content:"";position:absolute;border:1px solid rgba(23,107,77,.18);border-radius:50%;width:82%;aspect-ratio:1}.monogram:after{width:58%}.monogram strong{font-size:clamp(5rem,10vw,8rem);color:var(--green);letter-spacing:-.1em;z-index:1}
+section{padding:74px 0;border-top:1px solid var(--line)}.section-label{color:var(--green);font-size:.78rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.section-head{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.06em;line-height:1.1;margin:12px 0 22px}.about-grid{display:grid;grid-template-columns:.65fr 1.35fr;gap:64px}.about-copy{font-size:1.08rem;color:var(--muted);max-width:680px}.about-copy p{margin:0 0 16px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}.card{background:var(--white);border:1px solid var(--line);padding:24px;border-radius:12px;min-height:175px}.card .num{font-size:.8rem;color:var(--green);font-weight:800;letter-spacing:.08em}.card h3{font-size:1.12rem;margin:18px 0 8px;letter-spacing:-.025em}.card p{font-size:.94rem;color:var(--muted);margin:0}.education{background:var(--white);border:1px solid var(--line);padding:28px;border-radius:12px;display:flex;gap:20px;align-items:flex-start;max-width:720px}.edu-icon{width:48px;height:48px;border-radius:12px;background:var(--green2);color:var(--green);display:grid;place-items:center;font-size:1.35rem;flex-shrink:0}.education h3{margin:0 0 5px}.education p{margin:0;color:var(--muted)}.contact{background:var(--green);color:white;border-radius:16px;padding:44px;display:flex;align-items:center;justify-content:space-between;gap:30px}.contact .section-label{color:#bfe4cd}.contact h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;letter-spacing:-.06em;margin:12px 0}.contact p{color:#d9e9df;margin:0;max-width:490px}.contact .btn{background:white;color:var(--green);border-color:white;white-space:nowrap}footer{padding:28px 0;color:var(--muted);font-size:.88rem;display:flex;justify-content:space-between;gap:20px}
+@media(max-width:700px){.wrap{width:min(100% - 32px,1080px)}header{height:70px}nav{gap:14px;font-size:.82rem}.hero{padding:65px 0;grid-template-columns:1fr;gap:34px}.monogram{max-width:250px;grid-row:1}.hero h1{font-size:clamp(3.7rem,17vw,5.8rem)}.about-grid{grid-template-columns:1fr;gap:8px}.cards{grid-template-columns:1fr}.card{min-height:0}.contact{padding:30px;align-items:flex-start;flex-direction:column}footer{flex-direction:column;gap:5px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <a class="brand" href="#home" aria-label="Fera, beranda">fera<span>.</span></a>
+  <nav aria-label="Navigasi utama"><a href="#about">Tentang</a><a href="#education">Pendidikan</a><a href="#contact">Kontak</a></nav>
+</header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> Personal website</div>
+      <h1>Halo, saya<br><em>Fera.</em></h1>
+      <p class="intro">Lulusan BINUS University yang percaya bahwa rasa ingin tahu, kemauan untuk terus belajar, dan langkah kecil yang konsisten dapat membawa kita berkembang.</p>
+      <div class="actions"><a class="btn primary" href="#about">Kenali saya <span aria-hidden="true">↘</span></a><a class="btn secondary" href="https://github.com/feralj84-lgtm" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+    </div>
+    <div class="monogram" aria-label="Inisial F"><strong>F.</strong></div>
+  </div>
+  <section id="about"><div class="wrap about-grid">
+    <div><div class="section-label">01 / Tentang saya</div><h2 class="section-head">Selalu bertumbuh,<br>tetap ingin tahu.</h2></div>
+    <div class="about-copy"><p>Saya Fera, lulusan BINUS University. Saya senang mengeksplorasi ide, mempelajari hal baru, dan mencari cara yang lebih baik untuk menyelesaikan tantangan.</p><p>Halaman ini adalah ruang untuk mengenal saya, perjalanan pendidikan, minat, serta hal-hal yang sedang saya kembangkan. Saya akan terus memperbaruinya seiring perjalanan saya.</p>
+    <div class="cards">
+      <article class="card"><div class="num">01 — LEARN</div><h3>Terus belajar</h3><p>Terbuka pada wawasan dan pengalaman baru.</p></article>
+      <article class="card"><div class="num">02 — SOLVE</div><h3>Pemecahan masalah</h3><p>Mendekati tantangan dengan rasa ingin tahu dan pikiran terbuka.</p></article>
+      <article class="card"><div class="num">03 — GROW</div><h3>Berkembang</h3><p>Menghargai proses, konsistensi, dan kemajuan kecil.</p></article>
+    </div></div>
+  </div></section>
+  <section id="education"><div class="wrap"><div class="section-label">02 / Pendidikan</div><h2 class="section-head">Latar belakang akademik</h2>
+    <div class="education"><div class="edu-icon" aria-hidden="true">✳</div><div><h3>BINUS University</h3><p>Lulusan universitas — Indonesia</p><p style="font-size:.9rem;margin-top:8px">Informasi jurusan dan tahun kelulusan dapat ditambahkan setelah dikonfirmasi.</p></div></div>
+  </div></section>
+  <section id="contact"><div class="wrap"><div class="contact"><div><div class="section-label">03 / Terhubung</div><h2>Mari tetap terhubung.</h2><p>Ingin melihat proyek atau mengetahui lebih banyak? Kunjungi profil GitHub saya.</p></div><a class="btn" href="https://github.com/feralj84-lgtm" target="_blank" rel="noreferrer">Kunjungi GitHub ↗</a></div></div></section>
+</main>
+<footer class="wrap"><span>© <span id="year">2026</span> Fera. Dibuat dengan sederhana.</span><span>Minimal design · Green &amp; white</span></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
